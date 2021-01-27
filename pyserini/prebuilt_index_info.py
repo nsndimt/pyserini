@@ -382,5 +382,59 @@ INDEX_INFO = {
         "documents": 8841823,
         "unique_terms": 2660824,
         "downloaded": False
-    }
+    },
+    "wikipedia-dpr-hnsw": {
+        "description": "Wikipedia corpus encoded by DPR and indexed as brute force index",
+        "urls": [
+            "https://www.dropbox.com/s/ctos2lvmkof7l0g/dindex-hnsw-wikipedia-20200115-cd5034.tar.gz?dl=1",
+        ],
+        "md5": "b91a50493233593a3ce872b71ca37574",
+        "size compressed (bytes)": 77724801312,
+        "documents": 21015320,
+        "downloaded": False
+    },
+    "wikipedia-dpr-bf": {
+        "description": "Wikipedia corpus encoded by DPR and indexed as brute force index",
+        "urls": [
+            "https://www.dropbox.com/s/coat4uu7tdz3wu9/dindex-faissbf-wikipedia-20200115-cd5034.tar.gz?dl=1",
+        ],
+        "md5": "dd3c29e426d33b49d2b86eb573915783",
+        "size compressed (bytes)": 59836863765,
+        "documents": 21015320,
+        "downloaded": False
+    },
+    "wikipedia-dpr": {
+        "description": "Wikipedia (DPR 100 word splits) Anserini index",
+        "urls": [
+            "https://www.dropbox.com/s/spohu55l6608ho2/index-wikipedia-dpr-20210120-d1b9e6.tar.gz?dl=1",
+        ],
+        "md5": "c28f3a56b2dfcef25bf3bf755c264d04",
+        "size compressed (bytes)": 9177942656,
+        "total_terms": 1512973270,
+        "documents": 21015324,
+        "unique_terms": 5345463,
+        "downloaded": False
+    },
+    "wikipedia-dpr-slim": {
+        "description": "Wikipedia (DPR 100 word splits) Anserini index, without raw texts stored",
+        "urls": [
+            "https://www.dropbox.com/s/r2xpo3e0pecibir/index-wikipedia-dpr-slim-20210120-d1b9e6.tar.gz?dl=1",
+        ],
+        "md5": "7d40604a824b5df37a1ae9d25ea38071",
+        "size compressed (bytes)": 1810342390,
+        "total_terms": 1512973270,
+        "documents": 21015324,
+        "unique_terms": 5345463,
+        "downloaded": False
+    },
+    "msmarco-doc-tct_colbert-bf": {
+        "description": "MS MARCO document corpus encoded by TCT-ColBERT and indexed as brute force index",
+        "urls": [
+            "https://www.dropbox.com/s/tsf0oudr98bb0tq/msmarco-doc-tct_colbert-bf.tar.gz?dl=1",
+        ],
+        "md5": "cb85d46e8a9205829ada11f6534c12b2",
+        "size compressed (bytes)": 58514326130,
+        "documents": 20544550,
+        "downloaded": False
+    },
 }

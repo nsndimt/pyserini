@@ -62,6 +62,16 @@ class TestLoadTopics(unittest.TestCase):
         self.assertEqual(len(topics), 6980)
         self.assertTrue(isinstance(next(iter(topics.keys())), int))
 
+    def test_nq_dev_dpr(self):
+        topics = search.get_topics('nq_dev_dpr')
+        self.assertEqual(len(topics), 8757)
+        self.assertTrue(isinstance(next(iter(topics.keys())), int))
+
+    def test_nq_test_dpr(self):
+        topics = search.get_topics('nq_test_dpr')
+        self.assertEqual(len(topics), 3610)
+        self.assertTrue(isinstance(next(iter(topics.keys())), int))
+
     def test_covid_round1(self):
         topics = search.get_topics('covid_round1')
         self.assertEqual(len(topics), 30)
@@ -69,7 +79,7 @@ class TestLoadTopics(unittest.TestCase):
         self.assertEqual('coronavirus remdesivir', topics[30]['query'])
         self.assertTrue(isinstance(next(iter(topics.keys())), int))
 
-    def test_covid_round1(self):
+    def test_covid_round1_udel(self):
         topics = search.get_topics('covid_round1_udel')
         self.assertEqual(len(topics), 30)
         self.assertEqual('coronavirus origin origin COVID-19', topics[1]['query'])
